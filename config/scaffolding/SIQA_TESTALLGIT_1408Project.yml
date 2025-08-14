@@ -8,19 +8,25 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: SIQA_OriginTest_OnPremAssets
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/vijetadixit
   gitUsername: Karthik-V-IBM-10
   gitBranch: Test2
 services:
-- serviceName: project.siqa_testallgit_1408.integrations:deepclonetest
+- serviceName: project.siqa_testallgit_1408.integrations:Copy_deepclonetest
   packages:
   - name: SIQA_TESTALLGIT_1408Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
 - serviceName: pub.string:stringToBytes
   packages:
@@ -34,3 +40,11 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2078
+- serviceName: project.siqa_testallgit_1408.integrations:deepclonetest
+  packages:
+  - name: SIQA_TESTALLGIT_1408Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
