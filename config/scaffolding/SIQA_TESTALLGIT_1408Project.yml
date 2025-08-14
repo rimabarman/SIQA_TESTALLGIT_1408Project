@@ -20,6 +20,14 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: Test2
 services:
+- serviceName: project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsertNew
+  packages:
+  - name: SIQA_TESTALLGIT_1408Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
 - serviceName: project.siqa_testallgit_1408.integrations:Copy_deepclonetest
   packages:
   - name: SIQA_TESTALLGIT_1408Project
@@ -40,6 +48,14 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2078
+- serviceName: project.siqa_testallgit_1408.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQA_TESTALLGIT_1408Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
 - serviceName: project.siqa_testallgit_1408.integrations:deepclonetest
   packages:
   - name: SIQA_TESTALLGIT_1408Project
