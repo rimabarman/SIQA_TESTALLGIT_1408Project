@@ -19,7 +19,22 @@ packages:
   gitUrl: https://github.com/vijetadixit
   gitUsername: Karthik-V-IBM-10
   gitBranch: Test2
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
+- serviceName: project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+  packages:
+  - name: SIQA_TESTALLGIT_1408Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsertNew
   packages:
   - name: SIQA_TESTALLGIT_1408Project
@@ -28,6 +43,10 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqa_testallgit_1408.integrations:Copy_deepclonetest
   packages:
   - name: SIQA_TESTALLGIT_1408Project
@@ -36,6 +55,10 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.string:stringToBytes
   packages:
   - name: WmPublic
@@ -56,6 +79,10 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqa_testallgit_1408.integrations:deepclonetest
   packages:
   - name: SIQA_TESTALLGIT_1408Project
@@ -64,3 +91,54 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+configurationVariables:
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : 9.46.196.248
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : siqatest
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MySQL
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : MYSQL_DATABASE
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
+  : Test_Driver
+  ? artConnection.SIQA_TESTALLGIT_1408Project.project.siqa_testallgit_1408.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="

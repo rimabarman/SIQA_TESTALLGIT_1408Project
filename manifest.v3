@@ -11,17 +11,18 @@
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="TPP_services_in_FCS">1.0</value>
     <value name="SIQA_OriginTest_OnPremAssets">1.0</value>
+    <value name="WmJDBCAdapter">10.3.0.0.34</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">12</value>
+  <value name="build">13</value>
   <null name="description"/>
   <value name="created_date">14-08-2025 03:30:40 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2025-08-14T03:52:55.172461905Z</value>
+  <value name="lastUpdated">2025-08-14T03:53:28.072483021Z</value>
   <value name="wmProjectId">fle25837bbd5c4bc6b2060d0</value>
   <value name="creator">Rima Barman</value>
 </Values>
